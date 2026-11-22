@@ -8,7 +8,7 @@ function Window({ title, onClose }: WindowProps) {
      <div className="w-[500px] max-w-[90vw] overflow-hidden rounded-2xl border-2 border-blue-300 shadow-xl">
 
       {/* Title bar */}
-      <div className="flex items-center gap-4 bg-blue-200 p-4">
+      <div className="flex items-center gap-4 bg-blue-200 p-4 relative">
         
         <div className="flex items-center gap-2">
         <button
@@ -22,7 +22,7 @@ function Window({ title, onClose }: WindowProps) {
         </div>
 
 
-        <p>{title}</p>
+        <p className="absolute left-1/2 -translate-x-1/2">{title}</p>
       </div>
 
       {/* Window contents */}

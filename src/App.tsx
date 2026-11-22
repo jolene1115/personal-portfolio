@@ -23,10 +23,15 @@ function App() {
               <DesktopIcon name="Extracurriculars" onOpen={setOpenFolder}/>
         </div>
       {openFolder !== null && (
-        <Window
-          title={openFolder}
-          onClose={() => setOpenFolder(null)}
-        />
+        
+        <div className="absolute inset-0 grid place-items-center pointer-events-none">
+            <div className="pointer-events-auto">
+              <Window
+                title={openFolder}
+                onClose={() => setOpenFolder(null)}
+              />
+            </div>
+         </div>
       )}
     </div>
   )
