@@ -1,5 +1,6 @@
 import DesktopIcon from './components/DesktopIcon'
-import useState from 'react'
+import Window from './components/Window'
+import {useState} from 'react'
 
 
 function App() {
@@ -16,11 +17,17 @@ function App() {
       </div>
       
         <div className="absolute right-6 top-6 flex flex-col gap-6">
-              <DesktopIcon name="About" />
-              <DesktopIcon name="Projects" />
-              <DesktopIcon name="Experience" />
-              <DesktopIcon name="Extracurriculars" />
+              <DesktopIcon name="About" onOpen={setOpenFolder}/>
+              <DesktopIcon name="Projects" onOpen={setOpenFolder} />
+              <DesktopIcon name="Experience" onOpen={setOpenFolder} />
+              <DesktopIcon name="Extracurriculars" onOpen={setOpenFolder}/>
         </div>
+      {openFolder !== null && (
+        <Window
+          title={openFolder}
+          onClose={() => setOpenFolder(null)}
+        />
+      )}
     </div>
   )
 }

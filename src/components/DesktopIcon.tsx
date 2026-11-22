@@ -1,13 +1,14 @@
 type DesktopIconProps = {
   name: string
+  onOpen: (name:string) => void
 }
 
-function DesktopIcon({ name }: DesktopIconProps) {
+function DesktopIcon({ name, onOpen }: DesktopIconProps) {
   return (
    
     <button 
         type="button"
-        onClick ={() => console.log(name)}
+        onClick ={() => onOpen(name)}
         className="flex flex-col items-center cursor-pointer transition-transform duration-200 hover:scale-110">
         <img
           src="/icons/folder.svg"
