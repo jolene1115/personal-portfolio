@@ -4,11 +4,12 @@ type WindowProps = {
   title: string
   onClose: () => void
   children?: ReactNode
+  compact?: boolean
 }
 
 function Window({ title, onClose, children, compact = false }: WindowProps) {
   return (
-     <div className="`${compact ? 'w-[400px]' : 'w-[800px]'} max-w-[90vw] overflow-hidden rounded-2xl border-2 border-blue-300 shadow-xl">
+     <div className={`${compact ? 'w-[400px]' : 'w-[800px]'} max-w-[90vw] overflow-hidden rounded-2xl border-2 border-blue-300 shadow-xl`}>
 
       {/* Title bar */}
       <div className="flex items-center gap-4 border-b border-sky-400 bg-linear-to-b from-white via-sky-100 to-sky-300 p-4 relative">

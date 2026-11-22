@@ -10,11 +10,13 @@ function App() {
   const [openFolder, setOpenFolder] = useState<string | null>(null)
   const [showWelcome, setShowWelcome] = useState(true)
   return (
-    <div className="relative min-h-screen bg-linear-to-br from-white to-sky-200 flex items-center justify-center">
+    <div className="relative min-h-screen
+          bg-[radial-gradient(ellipse_at_center,#ffffff_0%,#dbeafe_50%,#93c5fd_100%)]
+          flex items-center justify-center">
      
       {showWelcome && (
-        <div className="md:absolute md:left-6 md:top-6">
-          <Window title="Welcome" onClose={() => setShowWelcome(false)}>
+       
+          <Window title="Welcome" compact onClose={() => setShowWelcome(false)}>
             <div className="p-4 text-center">
               <h1 className="text-3xl font-bold text-gray-800">jolene's desktop</h1>
               <p className="mt-3 text-gray-500">
@@ -22,7 +24,7 @@ function App() {
               </p>
             </div>
           </Window>
-         </div>
+
       )}
      
 
