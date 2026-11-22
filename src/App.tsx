@@ -1,6 +1,7 @@
 import DesktopIcon from './components/DesktopIcon'
 import Window from './components/Window'
 import Projects from './components/Projects'
+import About from './components/About'
 import {useState} from 'react'
 
 
@@ -31,7 +32,11 @@ function App() {
                 title={openFolder}
                 onClose={() => setOpenFolder(null)}
               >
-                {openFolder === 'Projects' ? <Projects /> : null}
+                {openFolder === 'Projects' ? (
+                  <Projects /> 
+                ) : openFolder === 'About' ? (
+                  <About />
+                ) : null}
                 </Window>
             </div>
          </div>
