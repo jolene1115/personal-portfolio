@@ -1,11 +1,14 @@
+import type  { ReactNode } from 'react'
+
 type WindowProps = {
   title: string
   onClose: () => void
+  children?: ReactNode
 }
 
-function Window({ title, onClose }: WindowProps) {
+function Window({ title, onClose, children }: WindowProps) {
   return (
-     <div className="w-[500px] max-w-[90vw] overflow-hidden rounded-2xl border-2 border-blue-300 shadow-xl">
+     <div className="w-[800px] max-w-[90vw] overflow-hidden rounded-2xl border-2 border-blue-300 shadow-xl">
 
       {/* Title bar */}
       <div className="flex items-center gap-4 bg-blue-200 p-4 relative">
@@ -27,7 +30,7 @@ function Window({ title, onClose }: WindowProps) {
 
       {/* Window contents */}
       <div className="bg-white p-6">
-        <p>Folder contents coming soon...</p>
+       {children?? <p>Folder contents coming soon...</p>}
       </div>
 
     </div>
