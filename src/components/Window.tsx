@@ -9,12 +9,18 @@ function Window({ title, onClose }: WindowProps) {
 
       {/* Title bar */}
       <div className="flex items-center gap-4 bg-blue-200 p-4">
+        
+        <div className="flex items-center gap-2">
         <button
         type="button"
         onClick={onClose}
-        className="h-4 w-4 rounded-full bg-pink-300 cursor-pointer"
+        className="h-4 w-4 rounded-full bg-[#FF605C] cursor-pointer"
         aria-label="Close window"
         />
+        <span className="h-4 w-4 rounded-full bg-[#FFBD44]" aria-hidden="true"/>
+        <span className="h-4 w-4 rounded-full bg-[#00CA4E]" aria-hidden="true" />
+        </div>
+
 
         <p>{title}</p>
       </div>
