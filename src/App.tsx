@@ -3,6 +3,7 @@ import Window from './components/Window'
 import Projects from './components/Projects'
 import About from './components/About'
 import Experience from './components/Experience'
+import Extracurriculars from './Extracurriculars'
 import {useState} from 'react'
 
 
@@ -21,6 +22,9 @@ function App() {
               <h1 className="text-3xl font-bold text-gray-800">jolene's desktop</h1>
               <p className="mt-3 text-gray-500">
                 welcome to my little corner of the internet!
+              </p>
+              <p className="mt-3 text-gray-500">
+                click on a folder to explore
               </p>
             </div>
           </Window>
@@ -48,6 +52,8 @@ function App() {
                   <About />
                 ) : openFolder === 'Experience' ? ( 
                   <Experience />
+                ) : openFolder=== 'Extracurriculars' ? (
+                  <Extracurriculars />
                 ) : null}
                 </Window>
             </div>

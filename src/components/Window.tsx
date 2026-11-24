@@ -30,7 +30,7 @@ function Window({ title, onClose, children, compact = false }: WindowProps) {
       </div>
 
       {/* Window contents */}
-      <div className="bg-white p-6">
+      <div className="max-h-[65dvh] overflow-y-auto bg-white p-6">
        {children?? <p>Folder contents coming soon...</p>}
       </div>
 
