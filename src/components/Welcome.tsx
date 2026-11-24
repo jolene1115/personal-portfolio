@@ -13,7 +13,7 @@
           jolene's desktop
         </h1>
         <p className="mt-4 text-gray-500">
-          welcome! open a folder to see what i've been working on!
+          placeholder
         </p>
         </div>
       </div>

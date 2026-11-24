@@ -24,7 +24,7 @@ function App() {
                 welcome to my little corner of the internet!
               </p>
               <p className="mt-3 text-gray-500">
-                click on a folder to explore
+                click on a folder to start exploring :)
               </p>
             </div>
           </Window>
