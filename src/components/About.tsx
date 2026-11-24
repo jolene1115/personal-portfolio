@@ -6,11 +6,12 @@ export default function About(){
                 Software Engineering and Business Information Management student at UC Irvine
             </p>
             <p>
-                Hello! I'm Jolene! I am a student at UC Irvine double majoring in Software Engineering and
-                Business Information Management. I am interested not only in the software side of things 
-                but also the business value of things. 
-                Currently seeking summer 2027 internships 
-                in software engineering, product management, and systems engineering.
+                Hello! I'm Jolene, a student at UC Irvine double majoring in Software Engineering and Business Information Management.
+                I'm interested in how technology, people, and systems work together to solve real-world problems. 
+                I enjoy learning new things, building projects, and turning ideas into meaningful solutions.
+            </p>
+            <p className="mt-3">
+                Currently seeking Summer 2027 internship opportunities where I can continue learning and gain hands-on experience!
             </p>
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
                 <p>jolenek198@gmail.com</p>

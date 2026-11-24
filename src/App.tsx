@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="relative min-h-screen
           bg-[radial-gradient(ellipse_at_center,#ffffff_0%,#dbeafe_50%,#93c5fd_100%)]
-          flex items-center justify-center">
+          flex flex-col items-center justify-center gap-6 py-6">
      
       {showWelcome && (
        
@@ -28,7 +28,7 @@ function App() {
       )}
      
 
-        <div className="absolute right-6 top-6 flex flex-col gap-6">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-3 md:absolute md:right-6 md:top-6 md:grid-cols-1 md:gap-6">
               <DesktopIcon name="About" onOpen={setOpenFolder}/>
               <DesktopIcon name="Projects" onOpen={setOpenFolder} />
               <DesktopIcon name="Experience" onOpen={setOpenFolder} />
